@@ -10,7 +10,7 @@ The test aims to demonstrate that the registration was successful
 </p>
 <br>
 
-## 🚀 Project
+## 💾 Project
 
 Demo site is here: 
 
@@ -20,9 +20,10 @@ Demo site is here:
 
 The GIF represents the path taken to fill in all the fields
 
+![Gif](https://github.com/anabdlv/test-example-register/blob/main/TestExampleRegister.gif)
 
 
-## 🚀 Technologies
+## ⚙️ Technologies
 
 This project was developed with the following technologies:
 
