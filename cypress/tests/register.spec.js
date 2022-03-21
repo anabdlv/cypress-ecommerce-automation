@@ -4,13 +4,11 @@ var Chance = require('chance');
 var chance = new Chance();
 
 describe('Register', () => {
+    it('When the data is informed, then the register must be done', () => {
 
-    it('Access the Sing In page', ()=> {
         cy.visit('http://automationpractice.com/index.php')
         cy.get('.login').click()
         cy.url().should('contain', 'my-account')
-    });
-    it('When the data is informed, then the register must be done', () => {
 
         cy.get('input#email_create').type(chance.email())
         cy.get('button#SubmitCreate').click()
