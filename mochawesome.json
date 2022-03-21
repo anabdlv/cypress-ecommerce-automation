@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 2,
-    "passes": 2,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-03-20T16:00:41.701Z",
-    "end": "2022-03-20T16:00:59.002Z",
-    "duration": 17301,
-    "testsRegistered": 2,
+    "start": "2022-03-21T16:41:57.126Z",
+    "end": "2022-03-21T16:42:17.283Z",
+    "duration": 20157,
+    "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "45cb9f92-0bc6-4013-84b3-17b740d7a3ba",
+      "uuid": "f2a2b1fc-930c-4327-8aea-3c92e7eb837b",
       "title": "",
       "fullFile": "cypress/tests/register.spec.js",
       "file": "cypress/tests/register.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0c52d88e-61ad-4d13-90e3-2fb179ee03d7",
+          "uuid": "735ca9be-0f78-45d8-bdf4-628bdca875d4",
           "title": "Register",
           "fullFile": "",
           "file": "",
@@ -35,51 +35,32 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Access the Sing In page",
-              "fullTitle": "Register Access the Sing In page",
-              "timedOut": null,
-              "duration": 4877,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit('http://automationpractice.com/index.php');\ncy.get('.login').click();\ncy.url().should('contain', 'my-account');",
-              "err": {},
-              "uuid": "33c7be0b-0616-45bb-b728-5666809b61f8",
-              "parentUUID": "0c52d88e-61ad-4d13-90e3-2fb179ee03d7",
-              "isHook": false,
-              "skipped": false
-            },
-            {
               "title": "When the data is informed, then the register must be done",
               "fullTitle": "Register When the data is informed, then the register must be done",
               "timedOut": null,
-              "duration": 10137,
+              "duration": 17494,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.get('input#email_create').type(chance.email());\ncy.get('button#SubmitCreate').click();\ncy.url().should('contain', 'account-creation');\ncy.get('input#id_gender2').check();\ncy.get('input#customer_firstname').type(chance.first());\ncy.get('input#customer_lastname').type(chance.last());\ncy.get('input#passwd').type(chance.string());\ncy.get('select#days').select(chance.integer({\n  min: 1,\n  max: 31\n}));\ncy.get('select#months').select(chance.month());\ncy.get('select#years').select(chance.year({\n  min: 1900,\n  max: 2022\n})); //input#firstname\n//input#lastname\ncy.get('input#company').type(chance.company());\ncy.get('input#address1').type(chance.address()); //input#address2\ncy.get('input#city').type(chance.city());\ncy.get('select#id_state').select(chance.state({\n  full: true\n}));\ncy.get('input#postcode').type(chance.zip());\ncy.get('input#phone_mobile').type(chance.phone());\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'my-account');",
+              "code": "cy.visit('http://automationpractice.com/index.php');\ncy.get('.login').click();\ncy.url().should('contain', 'my-account');\ncy.get('input#email_create').type(chance.email());\ncy.get('button#SubmitCreate').click();\ncy.url().should('contain', 'account-creation');\ncy.get('input#id_gender2').check();\ncy.get('input#customer_firstname').type(chance.first());\ncy.get('input#customer_lastname').type(chance.last());\ncy.get('input#passwd').type(chance.string());\ncy.get('select#days').select(chance.integer({\n  min: 1,\n  max: 31\n}));\ncy.get('select#months').select(chance.month());\ncy.get('select#years').select(chance.year({\n  min: 1900,\n  max: 2022\n})); //input#firstname\n//input#lastname\ncy.get('input#company').type(chance.company());\ncy.get('input#address1').type(chance.address()); //input#address2\ncy.get('input#city').type(chance.city());\ncy.get('select#id_state').select(chance.state({\n  full: true\n}));\ncy.get('input#postcode').type(chance.zip());\ncy.get('input#phone_mobile').type(chance.phone());\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'my-account');",
               "err": {},
-              "uuid": "95579fb3-9cb9-4441-925e-e0b121eb8765",
-              "parentUUID": "0c52d88e-61ad-4d13-90e3-2fb179ee03d7",
+              "uuid": "8da4d92f-787b-4d7c-a347-a656b678ce42",
+              "parentUUID": "735ca9be-0f78-45d8-bdf4-628bdca875d4",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "33c7be0b-0616-45bb-b728-5666809b61f8",
-            "95579fb3-9cb9-4441-925e-e0b121eb8765"
+            "8da4d92f-787b-4d7c-a347-a656b678ce42"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15014,
+          "duration": 17494,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
